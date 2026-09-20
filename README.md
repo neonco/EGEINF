@@ -129,6 +129,8 @@ ID ведёт на задачу на kompege, `py` — на файл решен�
 
 - [11845](https://kompege.ru/task?id=11845) — [py](kompege/zadachi_po_nomeru/task15/11845.py)
 - [18044](https://kompege.ru/task?id=18044) — [py](kompege/zadachi_po_nomeru/task15/18044.py)
+- [18930](https://kompege.ru/task?id=18930) — [py](kompege/zadachi_po_nomeru/task15/18930.py)
+- [19247](https://kompege.ru/task?id=19247) — [py](kompege/zadachi_po_nomeru/task15/19247.py)
 - [21503](https://kompege.ru/task?id=21503) — [py](kompege/zadachi_po_nomeru/task15/21503.py)
 - [21710](https://kompege.ru/task?id=21710) — [py](kompege/zadachi_po_nomeru/task15/21710.py)
 - [23374](https://kompege.ru/task?id=23374) — [py](kompege/zadachi_po_nomeru/task15/23374.py)
@@ -176,6 +178,7 @@ ID ведёт на задачу на kompege, `py` — на файл решен�
 
 <details><summary><b>Задание 17</b></summary>
 
+- [19749](https://kompege.ru/task?id=19749) — [py](kompege/zadachi_po_nomeru/task17/19749.py)
 - [20342](https://kompege.ru/task?id=20342) — [py](kompege/zadachi_po_nomeru/task17/20342.py)
 - [21416](https://kompege.ru/task?id=21416) — [py](kompege/zadachi_po_nomeru/task17/21416.py)
 - [21505](https://kompege.ru/task?id=21505) — [py](kompege/zadachi_po_nomeru/task17/21505.py)
@@ -224,7 +227,9 @@ ID ведёт на задачу на kompege, `py` — на файл решен�
 
 - [13570](https://kompege.ru/task?id=13570) — [py](kompege/zadachi_po_nomeru/task24/13570.py)
 - [17685](https://kompege.ru/task?id=17685) — [py](kompege/zadachi_po_nomeru/task24/17685.py)
+- [18147](https://kompege.ru/task?id=18147) — [py](kompege/zadachi_po_nomeru/task24/18147.py)
 - [19254](https://kompege.ru/task?id=19254) — [py](kompege/zadachi_po_nomeru/task24/19254.py)
+- [19717](https://kompege.ru/task?id=19717) — [py](kompege/zadachi_po_nomeru/task24/19717.py)
 - [19719](https://kompege.ru/task?id=19719) — [py](kompege/zadachi_po_nomeru/task24/19719.py)
 - [20347](https://kompege.ru/task?id=20347) — [py](kompege/zadachi_po_nomeru/task24/20347.py)
 - [21509](https://kompege.ru/task?id=21509) — [py](kompege/zadachi_po_nomeru/task24/21509.py)
@@ -266,6 +271,10 @@ ID ведёт на задачу на kompege, `py` — на файл решен�
 
 - [11470](https://kompege.ru/task?id=11470) — [py](kompege/zadachi_po_nomeru/task25/11470.py)
 - [17686](https://kompege.ru/task?id=17686) — [py](kompege/zadachi_po_nomeru/task25/17686.py)
+- [19255](https://kompege.ru/task?id=19255) — [py](kompege/zadachi_po_nomeru/task25/19255.py)
+- [19721](https://kompege.ru/task?id=19721) — [py](kompege/zadachi_po_nomeru/task25/19721.py)
+- [19779](https://kompege.ru/task?id=19779) — [py](kompege/zadachi_po_nomeru/task25/19779.py)
+- [19889](https://kompege.ru/task?id=19889) — [py](kompege/zadachi_po_nomeru/task25/19889.py)
 - [20348](https://kompege.ru/task?id=20348) — [py](kompege/zadachi_po_nomeru/task25/20348.py)
 - [21511](https://kompege.ru/task?id=21511) — [py](kompege/zadachi_po_nomeru/task25/21511.py)
 - [24166](https://kompege.ru/task?id=24166) — [py](kompege/zadachi_po_nomeru/task25/24166.py)
@@ -288,6 +297,7 @@ ID ведёт на задачу на kompege, `py` — на файл решен�
 
 - [13394](https://kompege.ru/task?id=13394) — [py](kompege/zadachi_po_nomeru/task26/13394.py)
 - [17643](https://kompege.ru/task?id=17643) — [py](kompege/zadachi_po_nomeru/task26/17643.py)
+- [17881](https://kompege.ru/task?id=17881) — [py](kompege/zadachi_po_nomeru/task26/17881.py)
 - [21424](https://kompege.ru/task?id=21424) — [py](kompege/zadachi_po_nomeru/task26/21424.py)
 - [21512](https://kompege.ru/task?id=21512) — [py](kompege/zadachi_po_nomeru/task26/21512.py)
 - [22168](https://kompege.ru/task?id=22168) — [py](kompege/zadachi_po_nomeru/task26/22168.py)
@@ -311,6 +321,7 @@ ID ведёт на задачу на kompege, `py` — на файл решен�
 
 <details><summary><b>Задание 27</b></summary>
 
+- [18677 часть A](https://kompege.ru/task?id=18677) — [py](kompege/zadachi_po_nomeru/task27/18677/27_A_18677.py), [данные](kompege/zadachi_po_nomeru/task27/18677/)
 - [18678 часть A](https://kompege.ru/task?id=18678) — [py](kompege/zadachi_po_nomeru/task27/18678/27_A_18678.py), [данные](kompege/zadachi_po_nomeru/task27/18678/)
 - [25300 часть A](https://kompege.ru/task?id=25300) — [py](kompege/zadachi_po_nomeru/task27/25300/27_A_25300.py), [данные](kompege/zadachi_po_nomeru/task27/25300/)
 - [25364 часть A](https://kompege.ru/task?id=25364) — [py](kompege/zadachi_po_nomeru/task27/25364/27_A_25364.py), [данные](kompege/zadachi_po_nomeru/task27/25364/)
@@ -383,3 +394,22 @@ ID ведёт на задачу на kompege, `py` — на файл решен�
 ### 2026–2027
 
 Пусто — ждём первых вариантов нового учебного года.
+
+## Прочее
+
+### Яндекс-варианты
+
+Разборы собственных Яндекс-вариантов (номера не из kompege):
+
+| Папка | Что внутри |
+|---|---|
+| `yandex_education/variant8/` | задачи 16, 23, 24, 25 + данные (`24.txt`, `26.txt`, `26.xlsx`) |
+| `yandex_education/variant9/` | задачи 23, 24, 25 + данные (`task3.xlsx`, `task5.jpg`, `task6.png`, `task11.png`) |
+
+### Поляков
+
+Решения задач Константина Полякова — в `Polyakov/` (в т.ч. `Polyakov/task14/8052.py`).
+
+### Заметки
+
+Учебные разборы с комментариями — в папке [`notes/`](notes/): `ipaddress` (задача 13), кэш-рекурсия (16), теория игр (19–21), динамика по монетам (26).
