@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "ЕГЭ Информатика — банк решений",
+    "subtitle": "Генерация и публикация сайта",
+    "locale": "en",
+    "animation": "trace",
+    "visual_preset": "blueprint",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1120,
+      560
+    ],
+    "views": [
+      {
+        "id": "pipeline",
+        "label": "Сборка сайта",
+        "focus": [
+          "kompege",
+          "solutions",
+          "assets",
+          "build",
+          "site"
+        ],
+        "note": "build_site.py сканирует задачи и встраивает код в один HTML."
+      },
+      {
+        "id": "publish",
+        "label": "Публикация",
+        "focus": [
+          "site",
+          "actions",
+          "pages",
+          "reader"
+        ],
+        "note": "Push в master запускает CI, результат уходит на GitHub Pages."
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "kompege",
+      "type": "external",
+      "label": "kompege.ru",
+      "sublabel": "условия и ID задач",
+      "pos": [
+        36,
+        330
+      ],
+      "size": [
+        150,
+        68
+      ]
+    },
+    {
+      "id": "solutions",
+      "type": "database",
+      "label": "Решения задач",
+      "sublabel": "kompege/…/taskN/ID.py",
+      "pos": [
+        36,
+        120
+      ],
+      "size": [
+        150,
+        68
+      ]
+    },
+    {
+      "id": "assets",
+      "type": "database",
+      "label": "Ассеты задач",
+      "sublabel": "png · ods · xlsx · txt",
+      "pos": [
+        300,
+        330
+      ],
+      "size": [
+        150,
+        68
+      ]
+    },
+    {
+      "id": "build",
+      "type": "backend",
+      "label": "scripts/build_site.py",
+      "sublabel": "поиск ID + встраивание кода",
+      "brand": "python",
+      "pos": [
+        300,
+        120
+      ],
+      "size": [
+        190,
+        68
+      ]
+    },
+    {
+      "id": "site",
+      "type": "frontend",
+      "label": "site/index.html",
+      "sublabel": "самодостаточный одностраничник",
+      "pos": [
+        516,
+        120
+      ],
+      "size": [
+        160,
+        68
+      ]
+    },
+    {
+      "id": "actions",
+      "type": "cloud",
+      "label": "GitHub Actions",
+      "sublabel": "pages.yml",
+      "brand": "github-actions",
+      "pos": [
+        700,
+        120
+      ],
+      "size": [
+        150,
+        68
+      ]
+    },
+    {
+      "id": "pages",
+      "type": "cloud",
+      "label": "GitHub Pages",
+      "sublabel": "neonco.github.io/EGE2026",
+      "pos": [
+        920,
+        120
+      ],
+      "size": [
+        160,
+        68
+      ]
+    },
+    {
+      "id": "reader",
+      "type": "external",
+      "label": "Ученик / учитель",
+      "sublabel": "поиск по ID · тема",
+      "pos": [
+        920,
+        330
+      ],
+      "size": [
+        160,
+        68
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "kompege-to-solutions",
+      "from": "kompege",
+      "to": "solutions",
+      "label": "ID задач",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "labelAt": [
+        176,
+        259
+      ]
+    },
+    {
+      "id": "solutions-to-build",
+      "from": "solutions",
+      "to": "build",
+      "label": "taskN/ID.py",
+      "labelDy": -50
+    },
+    {
+      "id": "assets-to-build",
+      "from": "assets",
+      "to": "build",
+      "label": "png · ods · xlsx · txt",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "labelAt": [
+        440,
+        259
+      ]
+    },
+    {
+      "id": "build-to-site",
+      "from": "build",
+      "to": "site",
+      "label": "index.html",
+      "labelDy": -50
+    },
+    {
+      "id": "site-to-actions",
+      "from": "site",
+      "to": "actions",
+      "label": "push master",
+      "variant": "dashed",
+      "labelDy": -50
+    },
+    {
+      "id": "actions-to-pages",
+      "from": "actions",
+      "to": "pages",
+      "label": "сборка и деплой",
+      "labelDy": -50
+    },
+    {
+      "id": "pages-to-reader",
+      "from": "pages",
+      "to": "reader",
+      "label": "HTTPS",
+      "variant": "emphasis",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelAt": [
+        1065,
+        259
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "dot": "amber",
+      "title": "Пайплайн",
+      "items": [
+        "build_site.py сканирует zadachi_po_nomeru",
+        "Код встраивается в JSON-payload",
+        "site/index.html — один файл без зависимостей"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Публикация",
+      "items": [
+        "Push в master → GitHub Actions",
+        "CI пересобирает site и деплоит",
+        "GitHub Pages: neonco.github.io/EGE2026"
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "Читатель",
+      "items": [
+        "Поиск по ID и фильтр по номерам",
+        "Тёмная тема, ссылки на данные",
+        "Каждая задача ведёт на kompege.ru"
+      ]
+    }
+  ]
+}

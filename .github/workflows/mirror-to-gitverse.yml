@@ -1,0 +1,41 @@
+name: Mirror to GitVerse
+
+on:
+  push:
+    branches: ['**']
+    tags: ['**']
+  workflow_dispatch:
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mirror branches and tags to GitVerse
+        env:
+          SRC_REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ github.token }}
+          GV_REPO: neonco/EGEINF
+          GV_TOKEN: ${{ secrets.GITVERSE_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${GV_TOKEN:-}" ]; then
+            echo "ERROR: missing secret GITVERSE_TOKEN"
+            exit 1
+          fi
+
+          SRC="https://x-access-token:${GH_TOKEN}@github.com/${SRC_REPO}.git"
+          DST="https://neonco:${GV_TOKEN}@gitverse.ru/${GV_REPO}.git"
+
+          git init --bare repo.git
+          cd repo.git
+          git remote add origin "$SRC"
+
+          git fetch --prune --prune-tags origin \
+            "+refs/heads/*:refs/heads/*" \
+            "+refs/tags/*:refs/tags/*"
+
+          git remote add gitverse "$DST"
+          git push --prune gitverse \
+            "+refs/heads/*:refs/heads/*" \
+            "+refs/tags/*:refs/tags/*"

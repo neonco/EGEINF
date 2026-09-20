@@ -6,6 +6,21 @@
 
 Задачи именуются номерами из банка задач с сайта Алексея Кабанова — [kompege.ru/task](https://kompege.ru/task). Все варианты сопоставлены с банком: каждое решение лежит в `kompege/zadachi_po_nomeru/taskN/` под своим ID kompege.
 
+## Архитектура
+
+Пайплайн «решения → `site/index.html` → GitHub Pages» как интерактивная карта (сгенерирована через [Archify](https://github.com/tt-a1i/archify)):
+
+- **Карта:** [neonco.github.io/EGE2026/architecture.html](https://neonco.github.io/EGE2026/architecture.html)
+- **Источник (typed JSON IR):** [`archify-architecture.json`](archify-architecture.json)
+
+Пересборка карты после правок диаграммы:
+
+```bash
+npx skills add tt-a1i/archify -g   # один раз
+node ~/.agents/skills/archify/bin/archify.mjs deliver architecture \
+  archify-architecture.json site/architecture.html --quality showcase
+```
+
 
 ## Решения по номерам
 
