@@ -2,11 +2,10 @@
 
 Сборник решений задач ЕГЭ по информатике: Python, таблицы, скриншоты.
 
-| Платформа | Ссылка |
-|---|---|
-| GitHub | [neonco/EGEINF](https://github.com/neonco/EGEINF) |
-| GitVerse | [neonco/EGEINF](https://gitverse.ru/neonco/EGEINF) |
-| Сайт | [neonco.github.io/EGEINF](https://neonco.github.io/EGEINF/) |
+| Платформа | Репозиторий | Сайт |
+|---|---|---|
+| GitHub | [neonco/EGEINF](https://github.com/neonco/EGEINF) | [neonco.github.io/EGEINF](https://neonco.github.io/EGEINF/) |
+| GitVerse | [neonco/EGEINF](https://gitverse.ru/neonco/EGEINF) | [neonco.gitverse.site/egeinf](https://neonco.gitverse.site/egeinf/) |
 
 Задачи именуются номерами из банка задач с сайта Алексея Кабанова — [kompege.ru/task](https://kompege.ru/task). Все решения лежат в `kompege/zadachi_po_nomeru/taskN/` под своим ID kompege.
 
