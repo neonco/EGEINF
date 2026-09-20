@@ -1,25 +1,18 @@
 # ЕГЭ по информатике
 
-**Сайт с решениями: [neonco.github.io/EGEINF](https://neonco.github.io/EGEINF/)** (собирается автоматически через GitHub Actions).
+Сборник решений задач ЕГЭ по информатике: Python, таблицы, скриншоты.
 
-Решения задач на Python (а также таблицами и скриншотами).
+| Платформа | Ссылка |
+|---|---|
+| GitHub | [neonco/EGEINF](https://github.com/neonco/EGEINF) |
+| GitVerse | [neonco/EGEINF](https://gitverse.ru/neonco/EGEINF) |
+| Сайт | [neonco.github.io/EGEINF](https://neonco.github.io/EGEINF/) |
 
-Задачи именуются номерами из банка задач с сайта Алексея Кабанова — [kompege.ru/task](https://kompege.ru/task). Все варианты сопоставлены с банком: каждое решение лежит в `kompege/zadachi_po_nomeru/taskN/` под своим ID kompege.
+Задачи именуются номерами из банка задач с сайта Алексея Кабанова — [kompege.ru/task](https://kompege.ru/task). Все решения лежат в `kompege/zadachi_po_nomeru/taskN/` под своим ID kompege.
 
 ## Архитектура
 
-Пайплайн «решения → `site/index.html` → GitHub Pages» как интерактивная карта (сгенерирована через [Archify](https://github.com/tt-a1i/archify)):
-
-- **Карта:** [neonco.github.io/EGEINF/architecture.html](https://neonco.github.io/EGEINF/architecture.html)
-- **Источник (typed JSON IR):** [`archify-architecture.json`](archify-architecture.json)
-
-Пересборка карты после правок диаграммы:
-
-```bash
-npx skills add tt-a1i/archify -g   # один раз
-node ~/.agents/skills/archify/bin/archify.mjs deliver architecture \
-  archify-architecture.json site/architecture.html --quality showcase
-```
+Схема сборки и публикации сайта: [карта](https://neonco.github.io/EGEINF/architecture.html) (исходник — [`archify-architecture.json`](archify-architecture.json)).
 
 
 ## Решения по номерам
