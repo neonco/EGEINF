@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#15171a">
 <title>ЕГЭ Информатика · банк решений</title>
-<script>try{var t=localStorage.getItem('ege-theme');document.documentElement.dataset.theme=(t===null?'dark':t);}catch(e){document.documentElement.dataset.theme='dark';}</script>
+<script>try{document.documentElement.dataset.theme=(localStorage.getItem('ege-theme')==='light')?'':'dark';}catch(e){document.documentElement.dataset.theme='dark';}</script>
 <style>
 :root{
   --bg:#fbfaf7; --fg:#1f2328; --muted:#5b6169; --faint:#8b9199;
@@ -399,8 +399,9 @@ const themeMeta = document.querySelector('meta[name=theme-color]');
 function syncThemeColor(){ if (themeMeta) themeMeta.setAttribute('content', root.dataset.theme==='dark' ? '#15171a' : '#fbfaf7'); }
 syncThemeColor();
 $('#theme').addEventListener('click', ()=>{
-  root.dataset.theme = root.dataset.theme==='dark' ? '' : 'dark';
-  localStorage.setItem('ege-theme', root.dataset.theme);
+  const dark = root.dataset.theme === 'dark';
+  root.dataset.theme = dark ? '' : 'dark';
+  localStorage.setItem('ege-theme', dark ? 'light' : 'dark');
   syncThemeColor();
 });
 
