@@ -8,6 +8,7 @@ on:
 
 jobs:
   mirror:
+    if: github.server_url == 'https://github.com'
     runs-on: ubuntu-latest
     steps:
       - name: Mirror branches and tags to GitVerse

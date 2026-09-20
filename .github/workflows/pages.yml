@@ -16,6 +16,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.server_url == 'https://github.com'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -30,6 +31,7 @@ jobs:
 
   deploy:
     needs: build
+    if: github.server_url == 'https://github.com'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
