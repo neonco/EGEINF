@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Генератор одностраничника «Банк решений ЕГЭ» из репозитория EGE2026.
+"""Генератор одностраничника «Банк решений ЕГЭ» из репозитория EGEINF.
 Сканирует kompege/zadachi_po_nomeru/ и собирает самодостаточный site/index.html.
 Запуск: python site/build_site.py  (из корня репозитория)
 """
@@ -139,7 +139,7 @@ footer{max-width:1080px;margin:40px auto 0;padding:0 24px;color:var(--faint);fon
 <header>
   <h1>ЕГЭ Информатика · банк решений</h1>
   <p class="sub"><span id="total"></span> · python, таблицы, скриншоты · задачи с <a href="https://kompege.ru/task">kompege.ru</a> ·
-    <a href="https://github.com/neonco/EGE2026">github.com/neonco/EGE2026</a></p>
+    <a href="https://github.com/neonco/EGEINF">github.com/neonco/EGEINF</a></p>
 </header>
 <div class="bar"><div class="bar-in">
   <input id="q" type="search" placeholder="Поиск по номеру задачи (ID)…" aria-label="Поиск по ID">
@@ -148,7 +148,7 @@ footer{max-width:1080px;margin:40px auto 0;padding:0 24px;color:var(--faint);fon
 <nav class="chips" id="chips"></nav>
 <main id="main"></main>
 <p class="empty" id="empty">Ничего не найдено</p>
-<footer>Сгенерировано автоматически из репозитория EGE2026 · build_site.py</footer>
+<footer>Сгенерировано автоматически из репозитория EGEINF · build_site.py</footer>
 <script id="data" type="application/json">__PAYLOAD__</script>
 <script>
 const TASKS = JSON.parse(document.getElementById('data').textContent);
@@ -213,8 +213,8 @@ function render(){
       card.className='card';
       const part = t.part ? ` · часть ${t.part}` : '';
       const dir = n===27 ? `task27/${t.id}` : (n===19 ? 'task192021' : 'task'+n);
-      const ghBase = `https://github.com/neonco/EGE2026/blob/master/kompege/zadachi_po_nomeru/${dir}`;
-      const rawBase = `https://raw.githubusercontent.com/neonco/EGE2026/master/kompege/zadachi_po_nomeru/${dir}`;
+      const ghBase = `https://github.com/neonco/EGEINF/blob/master/kompege/zadachi_po_nomeru/${dir}`;
+      const rawBase = `https://raw.githubusercontent.com/neonco/EGEINF/master/kompege/zadachi_po_nomeru/${dir}`;
       const dataLinks = t.data.map(d=>`<a href="${ghBase}/${d}">${d}</a>`).join('');
       let bodyHtml, toggleLabel;
       if (t.kind === 'img') {

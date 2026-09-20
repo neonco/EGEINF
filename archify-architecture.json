@@ -129,7 +129,7 @@
       "id": "pages",
       "type": "cloud",
       "label": "GitHub Pages",
-      "sublabel": "neonco.github.io/EGE2026",
+      "sublabel": "neonco.github.io/EGEINF",
       "pos": [
         920,
         120
@@ -238,7 +238,7 @@
       "items": [
         "Push в master → GitHub Actions",
         "CI пересобирает site и деплоит",
-        "GitHub Pages: neonco.github.io/EGE2026"
+        "GitHub Pages: neonco.github.io/EGEINF"
       ]
     },
     {

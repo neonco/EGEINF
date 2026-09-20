@@ -1,6 +1,6 @@
 # ЕГЭ по информатике
 
-**Сайт с решениями: [neonco.github.io/EGE2026](https://neonco.github.io/EGE2026/)** (собирается автоматически через GitHub Actions).
+**Сайт с решениями: [neonco.github.io/EGEINF](https://neonco.github.io/EGEINF/)** (собирается автоматически через GitHub Actions).
 
 Решения задач на Python (а также таблицами и скриншотами).
 
@@ -10,7 +10,7 @@
 
 Пайплайн «решения → `site/index.html` → GitHub Pages» как интерактивная карта (сгенерирована через [Archify](https://github.com/tt-a1i/archify)):
 
-- **Карта:** [neonco.github.io/EGE2026/architecture.html](https://neonco.github.io/EGE2026/architecture.html)
+- **Карта:** [neonco.github.io/EGEINF/architecture.html](https://neonco.github.io/EGEINF/architecture.html)
 - **Источник (typed JSON IR):** [`archify-architecture.json`](archify-architecture.json)
 
 Пересборка карты после правок диаграммы:
