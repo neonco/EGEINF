@@ -10,7 +10,7 @@ jobs:
     if: github.server_url != 'https://github.com'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Build one-pager
@@ -19,8 +19,8 @@ jobs:
       - name: Verify entrypoint
         run: test -f site/index.html
 
-      - name: Upload pages artifact
-        uses: gitverse/upload-pages-artifact@v1.0.0
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
           path: site
 
@@ -29,5 +29,16 @@ jobs:
     if: github.server_url != 'https://github.com'
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy
-        uses: gitverse/deploy-pages@v1.0.0
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: ">=1.23"
+
+      - name: Deploy to GitVerse Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+        with:
+          artifact_name: gitverse-pages
+
+      - name: Print deploy URL
+        run: echo "page_url = ${{ steps.deployment.outputs.page_url }}"
