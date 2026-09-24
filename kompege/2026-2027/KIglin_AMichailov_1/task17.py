@@ -8,8 +8,7 @@ lim = max([x for x in m if len(str(abs(x))) == 4 and abs(x) % 100 == 23])
 
 
 def f(n):
-    if len(str(abs(n))) == 4:
-        if abs(n) % 10 == 1:
+    if len(str(abs(n))) == 4 and abs(n) % 10 == 1:
             return True
     return False
 
