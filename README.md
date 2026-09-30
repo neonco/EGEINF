@@ -395,8 +395,8 @@ ID ведёт на задачу на kompege, `py` — на файл решен�
 
 | Папка | Что внутри |
 |---|---|
-| `yandex_education/variant8/` | задачи 16, 23, 24, 25 + данные (`24.txt`, `26.txt`, `26.xlsx`) |
-| `yandex_education/variant9/` | задачи 23, 24, 25 + данные (`task3.xlsx`, `task5.jpg`, `task6.png`, `task11.png`) |
+| `yandex_education/2025-2026/variant8/` | задачи 16, 23, 24, 25 + данные (`24.txt`, `26.txt`, `26.xlsx`) |
+| `yandex_education/2025-2026/variant9/` | задачи 23, 24, 25 + данные (`task3.xlsx`, `task5.jpg`, `task6.png`, `task11.png`) |
 
 ### Поляков
 
