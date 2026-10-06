@@ -18,13 +18,6 @@ while len(prev) < 1000:
     prev.append(ind)
     ind = min([(s, i) for i, s in enumerate(g) if i not in prev])[1]
 
-print(g[100])
-print(g)
+print(int(g[100]))
 
-
-
-
-
-
-
-
+# 10971
