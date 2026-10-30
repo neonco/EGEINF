@@ -1,2 +1,2 @@
-for i in range(1, 28):
+for i in range(1, 27+1):
     open(f'task{i}.py', 'w')
